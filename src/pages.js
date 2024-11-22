@@ -1,12 +1,12 @@
 'use strict'
 
+import * as gridSelection from './gridSelection'
+
 export default {
+
   '/': {
-    H1: { text: 'Hello Symbols' },
-    P: { text: 'Lorem ipsum dolor sit amet' }
-  },
-  '/about': {
-    H3: { text: 'This is Symbols starter-kit' },
-    P: { text: 'Lorem ipsum dolor sit amet' }
+
+    extends: gridSelection
+
   }
 }

@@ -1,6 +1,6 @@
 'use strict'
 
-import { Flex, Link } from 'smbls'
+import {Flex, Link} from 'smbls'
 
 export const Header = {
   extend: Flex,
@@ -11,15 +11,14 @@ export const Header = {
   },
 
   Flex: {
-    props: { gap: 'C' },
+    props: {gap: 'C'},
     childExtend: {
       extend: Link,
-      props: ({ props }) => ({
+      props: ({props}) => ({
         textDecoration: window.location.pathname === props.href ? 'underline' : 'none'
       })
     },
-    Text_logo: { href: '/', text: 'Hello!' },
-    Text_about: { href: '/about', text: 'About' }
+    Text_logo: {href: '/', text: 'Grid!'},
   },
 
   ThemeSwitcher: {}
@@ -27,7 +26,7 @@ export const Header = {
 
 export const ThemeSwitcher = {
   extend: Flex,
-  props: { gap: 'A2' },
+  props: {gap: 'A2'},
   childExtend: {
     props: (element, state) => ({
       active: state.globalTheme === element.key,
@@ -38,13 +37,13 @@ export const ThemeSwitcher = {
     }),
     on: {
       click: (event, element, state) => {
-        state.update({ globalTheme: element.key })
+        state.update({globalTheme: element.key})
       }
     }
   },
-  dark: { text: 'Dark' },
-  light: { text: 'Light' },
-  midnight: { text: 'Midnight' }
+  dark: {text: 'Dark'},
+  light: {text: 'Light'},
+  midnight: {text: 'Midnight'}
 }
 
 export const Footer = {

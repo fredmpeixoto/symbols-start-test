@@ -1,6 +1,6 @@
 'use strict'
 
-import { create, Flex } from 'smbls'
+import {create, Flex} from 'smbls'
 
 import designSystem from './designSystem'
 import * as components from './components'
@@ -13,14 +13,16 @@ create({
     theme: 'document',
     flow: 'column',
     height: '100vh',
-    align: 'center space-between'
+    align: 'center space-between',
+
   },
 
   Header: {},
 
-  content: {},
+  content: {
+  },
 
-  Footer: { text: 'Footer' }
+  Footer: {}
 }, {
   designSystem,
   components,
