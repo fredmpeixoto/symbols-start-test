@@ -1,2 +1,2 @@
 export const axisX = 10;
-export const axisY = 30;
+export const axisY = 10;
