@@ -1,5 +1,5 @@
-const axisX = 8;
-const axisY = 16;
+import {axisX, axisY} from "../axes";
+
 const blockEmpty = '#E8F1FF';
 const blockFilled = '#3D7BD9';
 
@@ -66,8 +66,8 @@ export const tables = {
     },
     style: {
       backgroundColor: 'white',
-      height: '384px',
-      width: '546px',
+      minHeight: '384px',
+      minWidth: '546px',
       padding: '20px',
       borderRadius: '16px',
       display: 'flex',

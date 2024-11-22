@@ -1,0 +1,20 @@
+{
+  "name": "sy-cli",
+  "version": "1.0.0",
+  "description": "CLI to create component",
+  "main": "./bin/index.js",
+  "bin": {
+    "sycli": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fred Peixoto",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "figlet": "^1.8.0",
+    "yargs": "^17.7.2"
+  }
+}
